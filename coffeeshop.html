@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Caffeinate</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- fonts -->
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+       <!-- Header Start -->
+       <header class="header">
+
+        <!-- NAV BAR START -->
+        <!-- LOGO -->
+        <div class="logo-title">
+        <a href="#"><img class="logo" src="logo_png.png"></a>
+       </div>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+                <div class="fas fa-x" id="x_button"></div>
+                <a href="#cold" class="cold"></a>
+                <a href="#home">HOME</a>
+                <a href="#hot">MENU</a>
+                <a href="#contact">ABOUT</a>
+                <a href="#payment">PAYMENT</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-mug-hot" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        
+        <!-- ADD TO CART CONTAINER -->
+       <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+
+        <div class="cart-content">
+            
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <i class="fas fa-x" id="close-cart"></i>
+       </div>
+
+
+    </header>
+
+
+       <!-- Header End -->
+
+       <section id="home" class="home">
+        <video autoplay muted loop class="back-video">
+            <source src="coffee_background.mp4" type="video/mp4">
+        </video>
+
+        <div class="circle"></div>
+        <div class="content">
+            <h2 class="coffee">It is not just a coffee<br>It's <span class="typing">Cáffeinaté</span></h2>
+            <p class="home_p">Welcome to Cáffeinaté, where coffee enthusiasts and connoisseurs alike gather to indulge in the ultimate coffee experience. Nestled in the heart of the city, our cozy and inviting coffee shop aims to be the go-to destination for those seeking a perfect cup of flavors.</p>
+            <a href="#hot">Shop Now</a>
+        </div>
+        <div class="coffee1">
+            <img src="switch1.png" class="imgBox">
+        </div>
+        <ul class="thumb">
+            <li><img src="switchthumb1.png" onclick="imgSlider('switch1.png');changeCircleColor('#F0E7D6')"></li>
+            <li><img src="switchthumb2.png" onclick="imgSlider('switch2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="switchthumb3.png" onclick="imgSlider('switch3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+    
+       </section>
+       <section id="hot">
+        <div>
+        <h1 class="hot_title">HOT <span>BREW</span></h1>
+        </div>
+        <div class="box-Container">
+
+            <div class="box1">
+            <div class="box">
+                <img src="hot1.png" class="product-img">
+                <h3 class="product-title">Honey Almondmilk <br>Falt White</h3>
+                <p> Caffè Americano (Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance.) (15 calories, 0g sugar, 0g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+                
+            </div>
+
+            <div class="box">
+                <img src="hot2.png" class="product-img">
+                <h3 class="product-title">Espresso<br>Cafe</h3>
+                <p> (Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.) (10 calories, 0g sugar, 0g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+
+            <div class="box">
+                <img src="hot3.png" class="product-img">
+                <h3 class="product-title">Espresso <br>Con Panna</h3>
+                <p> (Espresso meets a dollop of whipped cream to enhance the rich and caramelly flavors of a straight-up shot.) (35 calories, 0g sugar, 2.5g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+            </div>
+            <div class="box2">
+            <div class="box">
+                <img src="hot4.png" class="product-img">
+                <h3 class="product-title">Cinnamon <br>Dolce Latte</h3>
+                <p>(We add freshly steamed milk and cinnamon dolce-flavored syrup to our classic espresso, topped with sweetened whipped cream.) (340 calories, 40g sugar, 14g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+
+            <div class="box">
+                <img src="hot5.png" class="product-img">
+                <h3 class="product-title">Caffe <br>Americano</h3>
+                <p> (Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance.) (15 calories, 0g sugar, 0g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+
+            <div class="box">
+                <img src="hot6.png" class="product-img">
+                <h3 class="product-title">Cappucino<br>Cafe</h3>
+                <p> (Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.) (140 calories, 12g sugar, 5g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+            <div class="cold-btn"><a href="#cold" class="cold-btn-text">COLD BREW</a></div>
+        </div>
+    </div>
+
+    </section>
+       <section id="cold">
+        <div>
+            <h1 class="hot_title">COLD <span>BREW</span></h1>
+            </div>
+
+        <div class="box-Container">
+
+            <div class="box1">
+            <div class="box">
+                <img src="cold1.png" class="product-img">
+                <h3 class="product-title">Chocolate Java <br>Mint Frappucino</h3>
+                <p> (Coffee and flavors of sweet chocolate and refreshing mint blended with rich Frappuccino® chips for a smooth treat.) (490 calories, 69g sugar, 20g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+
+            <div class="box">
+                <img src="cold2.png" class="product-img">
+                <h3 class="product-title">Iced Caffè <br>Americano</h3>
+                <p>(Espresso shots topped with cold water produce a light layer of crema, then served over ice.)<br> (15 calories, 0g sugar, 0g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+
+            <div class="box">
+                <img src="cold3.png" class="product-img">
+                <h3 class="product-title">Matcha Crème<br>Frappuccino </h3>
+                <p>(Its blend sweetened premium matcha green tea, milk and ice—topped off with sweetened whipped cream—inspires a good green vibes.) (420 calories, 61g sugar, 16g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+            </div>
+            <div class="box2">
+            <div class="box">
+                <img src="cold4.png" class="product-img">
+                <h3 class="product-title">Salted <br>Caramel Cream</h3>
+                <p> (Our signature, super-smooth cold brew, sweetened with a touch of caramel and topped with a salted, rich cold foam.) (240 calories, 26g sugar, 14g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+
+            <div class="box">
+                <img src="cold5.png" class="product-img">
+                <h3 class="product-title">Strawberry Crème<br>Frappuccino</h3>
+                <p>(A blend of ice, milk and strawberry puree layered on top of a splash of strawberry puree and finished with vanilla whipped cream.) (370 calories, 51g sugar, 16g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+
+            <div class="box">
+                <img src="cold6.png" class="product-img">
+                <h3 class="product-title">White Chocolate <br>Macadamia Cream</h3>
+                <p>(Caffeinate signature cold brew sweetened with macadamia syrup, topped with a silky white-chocolate macadamia cream cold foam.) (240 calories, 30g sugar, 11g fat)</p>
+                <div class="price">$5.99</div>
+                <i class="fas fa-mug-hot add-cart"></i>
+            </div>
+            <div class="cold-btn"><a href="#hot" class="cold-btn-text">HOT BREW</a></div>
+        </div>
+    </div>
+    </section>
+       <section id="contact">
+
+        <div>
+        <hr>
+        <h1 class="about_thanks">THANKS FOR ORDERING OUR COFFEE, DRINK MORE</h1>
+        <h1 class="about_thanks">DRINK WELL.</h1>
+        <h6 class="about_uptodate">Stay up-to-date with our new opening, upcoming events, seasonal specials and promotions.</h6>
+        </div>
+
+        <div class="socials">
+            <div class="social-icon">
+            <a href="https://www.facebook.com/X.ameyzingpaul.X" target="_blank"><img src="facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/yks.kaez1/" target="_blank"><img src="instagram.png" alt=""></a>
+            <a href="https://twitter.com/kzen_ryuu" target="_blank"><img src="twitter.png" alt=""></a>
+
+        </div>
+
+            <ul class="navfoot">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#hot">HOT BREW</a></li>
+                <li><a href="#cold">COLD BREW</a></li>
+                <li><a href="">PAYMENT</a></li>
+            </ul>
+
+        </div>
+        <h3> HEALTHY COFFEE, BREWED ETHICALLY SOURCED IN THE PHILIPPINES</h3>
+        <h6 class="about_uptodate"> PAUL & JHAY VIC KITCHEN PRESS™ | ALL RIGHT RESERVE</h6>
+        
+       </section>
+       
+       <section id="payment" class="payment">
+        <form action="" onsubmit="submitForm()">
+        <div class="row">
+            <div class="col">
+
+                <h3 class="title">Billing Address</h3>
+
+                <div class="inputBox">
+                    <span>Full Name :</span>
+                    <input type="text" id="name" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="text" id="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>Address :</span>
+                    <input type="text" id="address" placeholder="brgy - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>City :</span>
+                    <input type="text" id="city" placeholder="city">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>State :</span>
+                        <input type="text" id="state" placeholder="Philippines">
+                    </div>
+                    <div class="inputBox">
+                        <span>Zip Code :</span>
+                        <input type="text" id="Zip" placeholder="4118">
+                    </div>
+                </div>
+            </div>
+
+                <div class="col">
+
+                    <h3 class="title">Payment</h3>
+    
+                    <div class="inputBox">
+                        <span>Cards Accepted :</span>
+                        <img src="card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name on Card :</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Credit Crad Number :</span>
+                        <input type="text" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>Exp Month :</span>
+                        <input type="text" placeholder="January">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Exp Year :</span>
+                            <input type="text" placeholder="2023">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+                    <!-- ADD TO CART CONTAINER -->
+                    <!-- <div class="cart2">
+                        <h2 class="cart-title2">Your Cart</h2>
+
+                        <div class="cart-content2">
+            
+                        </div>
+                            <div class="total2">
+                                <div class="total-title2">Total</div>
+                                    <div class="total-price2">$0</div>
+                        </div>
+                            <i class="fas fa-x" id="close-cart2"></i>
+                    </div> -->
+                    <input type="submit" value="Proceed To Checkout" class="submit-btn" onclick="submitForm()">
+                </div> 
+         </form>
+         
+                
+
+       </section>
+
+
+        
+
+    </body>
+</html>

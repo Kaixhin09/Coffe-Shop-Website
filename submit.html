@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffeinate</title>
+
+    <style>
+        .about_thanks{
+    text-align: center;
+    color: #F0E7DC;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+}
+body{
+    background-color: #2D1B08;
+}
+h3{
+    text-align: center;
+    color: #F0E7DC;
+    font-size: 30px;
+    margin-top: 65px;
+    letter-spacing: 5px;
+}
+.about_uptodate{
+    font-family: sans-serif;
+    text-align: center;
+    color: #F0E7DC;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+h6{
+    color: #F0E7DC;
+    font-size: larger;
+    font-family: sans-serif;
+}
+h1{
+    color: #F0E7DC;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+span{
+    font-family: cursive;
+}
+    </style>
+</head>
+<body>
+    <img src="logo_PNG.png" alt="">
+    <h1 class="about_thanks">THANKS FOR ORDERING OUR COFFEE, DRINK MORE</h1>
+    <h1 class="about_thanks">DRINK WELL.</h1>
+    <h6 class="about_uptodate">Stay up-to-date with our new opening, upcoming events, seasonal specials and promotions.</h6>
+
+        
+    <script>
+        // Retrieve the submitted data from the query string
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var name = urlParams.get('name');
+        var email = urlParams.get('email');
+        var address = urlParams.get('address');
+        var city = urlParams.get('city');
+        var state = urlParams.get('state');
+        
+    
+        // Display the submitted data on the page
+        document.getElementById('name').textContent = name;
+        document.getElementById('email').textContent = email;
+        document.getElementById('address').textContent = address;
+        document.getElementById('city').textContent = city;
+      </script>
+
+</body>
+</html>
